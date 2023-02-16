@@ -54,18 +54,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=608978d9-5ee7-48d2-859d-eb2aabf92260&lang=ru_RU" type="text/javascript">
     </script>
-</head>
-<body>
-    <div class="wrap">
-
-        <form action="" class="form">
-            <input type="text" id="latitude" placeholder="latitude">
-            <input type="text" id="longitude" placeholder="longitude">
-        </form>
-
-    <div id="map"></div>
-</body>
-<script>
+    <script>
     let mapOptions = {
         center:[41.314560, 69.269780],
         zoom:14
@@ -99,4 +88,16 @@
     })
 
 </script>
+</head>
+<body>
+    <div class="wrap">
+
+        <form action="" class="form">
+            <input type="text" id="latitude" placeholder="latitude">
+            <input type="text" id="longitude" placeholder="longitude">
+        </form>
+
+    <div id="map"></div>
+</body>
+
 </html>
