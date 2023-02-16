@@ -12,7 +12,7 @@
         html{
             background: #000;
         }
-        .wrap{
+        .wrap-map{
             width: 1200px;
             margin:30px auto;
             display: grid;
@@ -20,7 +20,7 @@
             grid-template-columns: 300px auto;
         }
 
-        .form input{
+        .form-map input{
             width: 100%;
             border: none;
             padding: 20px;
@@ -37,10 +37,10 @@
             -o-transition: all 0.5s ;
             transition: all 0.5s ;
         }
-        .form input:focus{
+        .form-map input:focus{
             background: #aaa;
         }
-        .form .form__btn{
+        .form-map .form__btn{
             color: #fff;
             background: rgb(63, 192, 46);
         }
@@ -52,9 +52,19 @@
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=608978d9-5ee7-48d2-859d-eb2aabf92260&lang=ru_RU" type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=50c2cf4e-d595-4d18-a363-b7aa10d3569c&lang=ru_RU" type="text/javascript">
     </script>
-    <script>
+</head>
+<body>
+    <div class="wrap-map">
+        <form action="" class="form-map">
+            <input type="text" id="latitude" placeholder="latitude">
+            <input type="text" id="longitude" placeholder="longitude">
+        </form>
+    <div id="map"></div>
+</body>
+
+<script>
     let mapOptions = {
         center:[41.314560, 69.269780],
         zoom:14
@@ -88,16 +98,4 @@
     })
 
 </script>
-</head>
-<body>
-    <div class="wrap">
-
-        <form action="" class="form">
-            <input type="text" id="latitude" placeholder="latitude">
-            <input type="text" id="longitude" placeholder="longitude">
-        </form>
-
-    <div id="map"></div>
-</body>
-
 </html>
